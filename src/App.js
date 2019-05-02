@@ -63,7 +63,9 @@ export default class App extends React.Component {
         <div className="App">
           <header className="header">
             <h1 className="headerTitle">THE INFINITY GAUNTLET</h1>
-            <p className="headerTxt">I am inevitable.</p>
+            <div className="balloon_wrap">
+              <div className="balloon">I am inevitable.</div>
+            </div>
             {this.state.topImg}
             <Button style={btnStyle} onClick={this.snapClick} variant="outlined" color="red">
               Snap!
