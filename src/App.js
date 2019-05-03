@@ -38,8 +38,6 @@ export default class App extends React.Component {
     this.snapClick = this.snapClick.bind(this);
   }
 
-  changeImg() {}
-
   snapClick() {
     this.setState({
       topImg: <img className="gauntlet_img" src={gauntlet} alt="top" />
@@ -50,13 +48,13 @@ export default class App extends React.Component {
     const btnStyle = {
       background:
         // "linear-gradient(to right, #FF0130, #FF8B00, #FFD300, #12E772, #266EF6, #E429F2)",
-        "linear-gradient(to right, #FF0130, #FF8B00, #FFD300)",
+        "linear-gradient(to right, #266EF6, #E429F2)",
       borderRadius: 3,
       border: 0,
       padding: "0.5em 2em",
       margin: "1em 0",
-      color: "white",
-      boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)"
+      color: "#fff",
+      boxShadow: "0 3px 5px 2px rgba(97,48,255,0.4)"
     };
     return (
       <MuiThemeProvider>
@@ -64,11 +62,11 @@ export default class App extends React.Component {
           <header className="header">
             <h1 className="headerTitle">THE INFINITY GAUNTLET</h1>
             <div className="balloon_wrap">
-              <div className="balloon">I am inevitable.</div>
+              <div className="balloon">I AM INEVITABLE.</div>
             </div>
             {this.state.topImg}
-            <Button style={btnStyle} onClick={this.snapClick} variant="outlined" color="red">
-              Snap!
+            <Button style={btnStyle} color="primary" variant="text" onClick={this.snapClick}>
+              SNAP!
             </Button>
           </header>
 
