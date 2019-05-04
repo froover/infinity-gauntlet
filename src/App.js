@@ -47,7 +47,7 @@ export default class App extends React.Component {
   componentDidMount() {
     const icons = [];
     icons.push(
-      <div>
+      <body className="body">
         <img className="icons_img" src={ironman} alt="icon" />
         <img className="icons_img" src={cap} alt="icon" />
         <img className="icons_img" src={thor} alt="icon" />
@@ -70,7 +70,7 @@ export default class App extends React.Component {
         <img className="icons_img" src={syuri} alt="icon" />
         <img className="icons_img" src={doctorstrange} alt="icon" />
         <img className="icons_img" src={wong} alt="icon" />
-      </div>
+      </body>
     );
     this.setState({ icons });
   }
@@ -94,6 +94,7 @@ export default class App extends React.Component {
       color: '#fff',
       boxShadow: '0 3px 5px 2px rgba(97,48,255,0.4)'
     };
+
     return (
       <MuiThemeProvider>
         <div className="App">
@@ -105,8 +106,9 @@ export default class App extends React.Component {
               SNAP!
             </Button>
           </header>
-
-          <body className="body">{this.state.icons}</body>
+          {this.state.icons}
+          {/* {console.log(this.state.icons[0])}
+          {console.log('this.state.icons')} */}
         </div>
       </MuiThemeProvider>
     );
