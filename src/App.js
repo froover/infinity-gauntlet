@@ -33,7 +33,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      topImg: <img className="thanos_img" src={thanos} alt="top" />,
+      topImg: <img className="top_img" src={thanos} alt="top" />,
       balloon: (
         <div className="balloon_wrap">
           <div className="balloon">I AM INEVITABLE.</div>
@@ -77,7 +77,7 @@ export default class App extends React.Component {
 
   snapClick() {
     this.setState({
-      topImg: <img className="gauntlet_img" src={gauntlet} alt="top" />,
+      topImg: <img className="top_img" src={gauntlet} alt="top" />,
       balloon: null
     });
   }
