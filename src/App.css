@@ -81,8 +81,8 @@ table {
 
 /* 吹き出し */
 .balloon_wrap {
-	align-self: flex-end;
-	margin: 0 2em;
+	align-self: center;
+	margin: 0 0 0 5em;
 }
 .balloon {
 	position: relative;
@@ -113,27 +113,17 @@ table {
 	margin-bottom: -1.312em;
 }
 
-.snap_btn {
-	margin-bottom: 1em;
-	color: "#FFD300";
-	font-family: 'Bangers', cursive;
-}
-
 .body {
 	padding-bottom: 2em;
 }
 
-.gauntlet_img {
-	width: 10em;
-	margin-bottom: 1em;
-}
-
-.thanos_img {
-	width: 18em;
+.top_img {
+	height: 15em;
 	margin-bottom: 1em;
 }
 
 .icons_img {
+	border-radius: 50%;
 	padding: 0.3em;
   width: 5em;
 }

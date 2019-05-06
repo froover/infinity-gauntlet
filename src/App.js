@@ -33,7 +33,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      topImg: <img className="thanos_img" src={thanos} alt="top" />,
+      topImg: <img className="top_img" src={thanos} alt="top" />,
       balloon: (
         <div className="balloon_wrap">
           <div className="balloon">I AM INEVITABLE.</div>
@@ -47,7 +47,7 @@ export default class App extends React.Component {
   componentDidMount() {
     const icons = [];
     icons.push(
-      <body className="body">
+      <div className="body" key="icons">
         <img className="icons_img" src={ironman} alt="icon" />
         <img className="icons_img" src={cap} alt="icon" />
         <img className="icons_img" src={thor} alt="icon" />
@@ -70,14 +70,14 @@ export default class App extends React.Component {
         <img className="icons_img" src={syuri} alt="icon" />
         <img className="icons_img" src={doctorstrange} alt="icon" />
         <img className="icons_img" src={wong} alt="icon" />
-      </body>
+      </div>
     );
     this.setState({ icons });
   }
 
   snapClick() {
     this.setState({
-      topImg: <img className="gauntlet_img" src={gauntlet} alt="top" />,
+      topImg: <img className="top_img" src={gauntlet} alt="top" />,
       balloon: null
     });
   }
