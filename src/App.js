@@ -47,7 +47,7 @@ export default class App extends React.Component {
   componentDidMount() {
     const icons = [];
     icons.push(
-      <body className="body">
+      <div className="body" key="icons">
         <img className="icons_img" src={ironman} alt="icon" />
         <img className="icons_img" src={cap} alt="icon" />
         <img className="icons_img" src={thor} alt="icon" />
@@ -70,7 +70,7 @@ export default class App extends React.Component {
         <img className="icons_img" src={syuri} alt="icon" />
         <img className="icons_img" src={doctorstrange} alt="icon" />
         <img className="icons_img" src={wong} alt="icon" />
-      </body>
+      </div>
     );
     this.setState({ icons });
   }
